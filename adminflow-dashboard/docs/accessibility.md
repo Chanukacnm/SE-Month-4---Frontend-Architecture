@@ -180,4 +180,4 @@ Run with **NVDA + Chrome** (Windows) and tick each row:
 2. **Chart tooltip** is mouse-only. Keyboard and screen-reader users get the same data from the hidden table. Making data points focusable would be a nice-to-have.
 3. **Toast auto-dismiss** (5 s, 10 s for errors). Notifications marked `persist` remain in the inbox, so nothing is lost (2.2.1). A setting to disable auto-dismiss is a follow-up.
 4. **Screen reader testing**: the accessibility tree is verified automatically (§5a). The manual NVDA pass (§5b) is still to do, and VoiceOver and TalkBack should follow.
-5. **Automated tests** cover the states above. Porting the Puppeteer keyboard script to Playwright + `@axe-core/playwright` in CI is planned (offline milestone).
+5. **Automated tests** cover the states above. They run as Puppeteer scripts in `scripts/audit/`.

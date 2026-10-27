@@ -145,5 +145,3 @@ The most important decision in the project was to **classify each piece of state
 | Native `<select>` (including `multiple`) | You get keyboard, screen-reader and mobile support for free, but limited styling. A combobox (Headless UI / Radix) would be the upgrade path. |
 | Token in `localStorage` | Simple for a demo. For production, prefer an httpOnly cookie session to reduce XSS exposure. |
 | `robots.txt` allows crawling | Only `/login` is reachable without auth. For production, add `X-Robots-Tag: noindex` on the server. |
-
-**Offline milestones:** i18n (`react-i18next`; all strings already sit in components and `Intl` formatters are centralised in `utils/format.ts`), WebSockets (replace `useSimulatedEvents` with a socket that calls `notify()` and `queryClient.invalidateQueries`), and Playwright E2E (the keyboard checks in the accessibility audit are ready to port).

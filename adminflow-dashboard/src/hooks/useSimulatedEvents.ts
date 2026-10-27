@@ -8,7 +8,7 @@ const EVENTS = [
 ] as const;
 
 /**
- * Stand-in for a server push channel (the WebSocket milestone replaces this).
+ * Stand-in for a server push channel (a real backend would use a WebSocket).
  * Pushes an inbox notification at a fixed interval while the user is signed in.
  */
 export function useSimulatedEvents(enabled: boolean, intervalMs = 90_000) {
