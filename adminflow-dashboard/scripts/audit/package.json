@@ -1,0 +1,18 @@
+{
+  "name": "adminflow-audit",
+  "private": true,
+  "type": "module",
+  "description": "Reproduces the Lighthouse, axe-core, keyboard and Storybook audits. Requires `npm run preview` (4173) and, for sb.mjs, a static Storybook served on 6006.",
+  "scripts": {
+    "lighthouse": "node lh.mjs ../../reports mobile && node lh.mjs ../../reports desktop",
+    "a11y": "node axe.mjs ../../reports/axe.json",
+    "stories": "node sb.mjs",
+    "pdf": "node pdf.mjs ../../reports ../../reports/lighthouse.pdf"
+  },
+  "dependencies": {
+    "axe-core": "4.10.2",
+    "lighthouse": "12.2.1",
+    "pdf-lib": "1.17.1",
+    "puppeteer-core": "23.9.0"
+  }
+}

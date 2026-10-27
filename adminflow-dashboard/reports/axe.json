@@ -1,0 +1,292 @@
+{
+  "results": [
+    {
+      "state": "light /login",
+      "violations": [],
+      "passes": 39,
+      "incomplete": []
+    },
+    {
+      "state": "light /login (validation errors)",
+      "violations": [],
+      "passes": 39,
+      "incomplete": []
+    },
+    {
+      "state": "light /",
+      "violations": [],
+      "passes": 50,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "state": "light /users",
+      "violations": [],
+      "passes": 47,
+      "incomplete": []
+    },
+    {
+      "state": "light /users/onboard",
+      "violations": [],
+      "passes": 42,
+      "incomplete": []
+    },
+    {
+      "state": "light /notifications",
+      "violations": [],
+      "passes": 44,
+      "incomplete": []
+    },
+    {
+      "state": "light /does-not-exist",
+      "violations": [],
+      "passes": 41,
+      "incomplete": []
+    },
+    {
+      "state": "light /users create modal (errors)",
+      "violations": [],
+      "passes": 34,
+      "incomplete": []
+    },
+    {
+      "state": "light /users delete dialog",
+      "violations": [],
+      "passes": 29,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "state": "light notification popover",
+      "violations": [],
+      "passes": 48,
+      "incomplete": []
+    },
+    {
+      "state": "light mobile dashboard",
+      "violations": [],
+      "passes": 47,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "state": "light mobile drawer open",
+      "violations": [],
+      "passes": 51,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "state": "light wizard step 2 (errors)",
+      "violations": [],
+      "passes": 42,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "state": "dark /login",
+      "violations": [],
+      "passes": 39,
+      "incomplete": []
+    },
+    {
+      "state": "dark /login (validation errors)",
+      "violations": [],
+      "passes": 39,
+      "incomplete": []
+    },
+    {
+      "state": "dark /",
+      "violations": [],
+      "passes": 50,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "state": "dark /users",
+      "violations": [],
+      "passes": 47,
+      "incomplete": []
+    },
+    {
+      "state": "dark /users/onboard",
+      "violations": [],
+      "passes": 42,
+      "incomplete": []
+    },
+    {
+      "state": "dark /notifications",
+      "violations": [],
+      "passes": 44,
+      "incomplete": []
+    },
+    {
+      "state": "dark /does-not-exist",
+      "violations": [],
+      "passes": 41,
+      "incomplete": []
+    },
+    {
+      "state": "dark /users create modal (errors)",
+      "violations": [],
+      "passes": 34,
+      "incomplete": []
+    },
+    {
+      "state": "dark /users delete dialog",
+      "violations": [],
+      "passes": 29,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "state": "dark notification popover",
+      "violations": [],
+      "passes": 48,
+      "incomplete": []
+    },
+    {
+      "state": "dark mobile dashboard",
+      "violations": [],
+      "passes": 47,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "state": "dark mobile drawer open",
+      "violations": [],
+      "passes": 51,
+      "incomplete": [
+        "color-contrast"
+      ]
+    },
+    {
+      "state": "dark wizard step 2 (errors)",
+      "violations": [],
+      "passes": 42,
+      "incomplete": [
+        "color-contrast"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "Protected route redirects to /login when signed out",
+      "ok": true,
+      "detail": "http://localhost:4173/login"
+    },
+    {
+      "name": "First Tab stop is the skip link",
+      "ok": true,
+      "detail": "Skip to main content"
+    },
+    {
+      "name": "Failed login moves focus back to password",
+      "ok": true,
+      "detail": "current-password"
+    },
+    {
+      "name": "Failed login shows role=alert message",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Keyboard login returns user to the originally requested page (/users)",
+      "ok": true,
+      "detail": "http://localhost:4173/users"
+    },
+    {
+      "name": "Dashboard renders 4 metric cards",
+      "ok": true,
+      "detail": "4"
+    },
+    {
+      "name": "Route change moves focus to page h1",
+      "ok": true,
+      "detail": "H1:Users"
+    },
+    {
+      "name": "Route change updates document title",
+      "ok": true,
+      "detail": "Users · AdminFlow"
+    },
+    {
+      "name": "Debounced search writes final query to URL",
+      "ok": true,
+      "detail": "priya"
+    },
+    {
+      "name": "Search filters table rows",
+      "ok": true,
+      "detail": "Priya Pererapriya.perera96@example.com, Priya Brownpriya.brown75@example.com, Priya Jensenpriya.jensen16@example.com"
+    },
+    {
+      "name": "Sortable header exposes aria-sort",
+      "ok": true,
+      "detail": "ascending"
+    },
+    {
+      "name": "Opening modal moves focus inside dialog",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Tab is trapped inside modal",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Background is inert while modal is open",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Escape closes modal and restores focus to trigger",
+      "ok": true,
+      "detail": "Edit Amara Cohen"
+    },
+    {
+      "name": "Edit shows in table before server responds (optimistic)",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Delete dialog focuses Cancel first",
+      "ok": true,
+      "detail": "Cancel"
+    },
+    {
+      "name": "Delete confirmation uses role=alertdialog",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Tabs: ArrowRight moves and selects next tab",
+      "ok": true,
+      "detail": "true:Unread (1)"
+    },
+    {
+      "name": "Wizard focuses step heading on Next",
+      "ok": true,
+      "detail": "Step 2 of 3: Access"
+    },
+    {
+      "name": "Wizard blocks Access step when non-admin gets billing (cross-field Zod refine)",
+      "ok": true,
+      "detail": "Step 2 of 3: Access | true"
+    },
+    {
+      "name": "Wizard submit creates user and navigates to /users",
+      "ok": true,
+      "detail": "http://localhost:4173/users"
+    }
+  ]
+}
